@@ -1,0 +1,4 @@
+---
+project_name: Serveur LAMP
+project_user: sysadmin
+apt_php_version: 7.2
