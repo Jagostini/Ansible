@@ -91,23 +91,23 @@
         group: "{{ item.group }}" 
         mode: 0644
       with_items: 
-        - src: "security.conf" 
+        - src: "files/conf/apache/security.conf" 
           dest: "/etc/apache2/conf-available/security.conf" 
           owner: root 
           group: root
-        - src: "ports.conf" 
+        - src: "files/conf/apache/ports.conf" 
           dest: "/etc/apache2/ports.conf" 
           owner: root 
           group: root
-        - src: "index.html" 
+        - src: "files/web/index.html" 
           dest: "/var/www/html/index.html" 
           owner: www-data
           group: www-data
-        - src: "apache2.conf.j2.conf" 
+        - src: "files/conf/apache/apache2.conf.j2.conf" 
           dest: "/etc/apache2/sites-available/monsite.conf" 
           owner: root 
           group: root
-        - src: "php.conf.j2.conf" 
+        - src: "files/conf/php/php.conf.j2.conf" 
           dest: "/etc/php/7.2/fpm/pool.d/monsite.conf" 
           owner: root 
           group: root
