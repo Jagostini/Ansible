@@ -3,7 +3,7 @@
 ## TP1 = Serveur LAMP
 
 - debian 9 avec dépôts Sury pour php7.2
-- utilisateurs root et sysadmin, mots de passe chiffrés avec vault
+- utilisateurs root et sysadmin
 - Apache 2.4 avec les fichiers de configuration fournis
   - Security.conf => /etc/apache2/conf-available/security.conf
   - Ports.conf => /etc/apache2/ports.conf
