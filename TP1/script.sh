@@ -11,5 +11,5 @@ echo 'deb http://http.debian.net/debian stretch-backports main' > /etc/apt/sourc
 apt update
 apt -t stretch-backports install ansible
 
-#ansible all -b -m user -a "name=sysadmin group=sysadmin createhome=yes uid=666 shell=/bin/bash"
+ansible all -b -m user -a "name=sysadmin group=sysadmin createhome=yes uid=666 shell=/bin/bash"
 ansible-playbook playbook.yml
